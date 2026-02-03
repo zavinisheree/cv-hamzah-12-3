@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Muhamad Hamjah - Pendaki & Porter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Plus+Jakarta+Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .skill-tag {
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter text-indigo-700">MH.</span>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#profil" class="hover:text-indigo-600 transition">Profil</a>
+                <a href="#pendidikan" class="hover:text-indigo-600 transition">Pendidikan</a>
+                <a href="#keahlian" class="hover:text-indigo-600 transition">Keahlian</a>
+                <a href="#kontak" class="hover:text-indigo-600 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 hero-gradient text-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-white/30 shadow-2xl shrink-0">
+                <img src="622677559_1577295756810340_7356106191829559644_n.jpg" 
+                     alt="Foto Muhamad Hamjah" 
+                     class="w-full h-full object-cover object-top"
+                     onerror="this.src='https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=800&auto=format&fit=crop'">
+            </div>
+            <div class="text-center md:text-left">
+                <span class="bg-white/20 px-4 py-1 rounded-full text-sm font-medium mb-4 inline-block">Siswa & Pendaki Gunung</span>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">MUHAMAD HAMJAH</h1>
+                <p class="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
+                    Seorang pelajar SMA yang berdedikasi dengan semangat tinggi dalam mendaki gunung. Memiliki pengalaman kepemimpinan organisasi dan keahlian khusus dalam masakan Nusantara serta navigasi gunung.
+                </p>
+                <div class="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#kontak" class="bg-white text-indigo-700 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition shadow-lg">Hubungi Saya</a>
+                    <a href="https://instagram.com/hamzh_sungkar" target="_blank" class="bg-indigo-600/30 border border-white/50 px-8 py-3 rounded-xl font-bold hover:bg-white/20 transition flex items-center gap-2">
+                        <i class="fab fa-instagram"></i> @hamzh_sungkar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-12">
+        
+        <!-- Left Column: Details -->
+        <div class="space-y-8">
+            <!-- Profil Singkat -->
+            <section id="profil" class="glass-card p-8 rounded-3xl shadow-sm">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2 text-indigo-700">
+                    <i class="fas fa-user-circle"></i> Tentang Diri
+                </h3>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex justify-between border-b pb-2">
+                        <span class="text-gray-500">Tempat, Tgl Lahir</span>
+                        <span class="font-medium text-right">Bandung, 4 Maret 2008</span>
+                    </li>
+                    <li class="flex justify-between border-b pb-2">
+                        <span class="text-gray-500">Hobby</span>
+                        <span class="font-medium text-right">Mendaki Gunung</span>
+                    </li>
+                    <li class="flex flex-col gap-1 border-b pb-2">
+                        <span class="text-gray-500">Alamat</span>
+                        <span class="font-medium">Kp Kerenceng, Desa Bojong Malaka RT 03 RW 05</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Sertifikat & Prestasi -->
+            <section class="glass-card p-8 rounded-3xl shadow-sm bg-indigo-50/50">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2 text-indigo-700">
+                    <i class="fas fa-award"></i> Prestasi
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <div class="text-indigo-600 mt-1"><i class="fas fa-trophy"></i></div>
+                        <div>
+                            <p class="font-bold text-sm">Peringkat 3 Besar Sejarah</p>
+                            <p class="text-xs text-gray-500 text-uppercase">Nilai TKA</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-indigo-600 mt-1"><i class="fas fa-medal"></i></div>
+                        <div>
+                            <p class="font-bold text-sm">Juara 1 Lomba Cerdas Cermat</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="text-indigo-600 mt-1"><i class="fas fa-running"></i></div>
+                        <div>
+                            <p class="font-bold text-sm">5 Besar Bandung Bedas Run</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bahasa -->
+            <section class="glass-card p-8 rounded-3xl shadow-sm">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-2 text-indigo-700">
+                    <i class="fas fa-language"></i> Kemampuan Bahasa
+                </h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-gray-100 p-3 rounded-xl text-center text-sm font-semibold">Indonesia</div>
+                    <div class="bg-gray-100 p-3 rounded-xl text-center text-sm font-semibold">Inggris</div>
+                    <div class="bg-gray-100 p-3 rounded-xl text-center text-sm font-semibold">Sunda</div>
+                    <div class="bg-gray-100 p-3 rounded-xl text-center text-sm font-semibold">Jawa</div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Middle & Right Columns: Journey -->
+        <div class="md:col-span-2 space-y-12">
+            
+            <!-- Keahlian Section -->
+            <section id="keahlian">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="w-8 h-1 bg-indigo-700 inline-block"></span> Keahlian & Kompetensi
+                </h3>
+                <div class="grid sm:grid-cols-3 gap-6">
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-orange-500 skill-tag">
+                        <div class="text-3xl mb-3">🏔️</div>
+                        <h4 class="font-bold mb-1 text-sm">Porter Gunung</h4>
+                        <p class="text-xs text-gray-500">Navigasi medan berat & manajemen logistik outdoor.</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-green-500 skill-tag">
+                        <div class="text-3xl mb-3">👨‍🍳</div>
+                        <h4 class="font-bold mb-1 text-sm">Masakan Nusantara</h4>
+                        <p class="text-xs text-gray-500">Mampu memasak berbagai hidangan khas Indonesia.</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl border-l-4 border-indigo-500 skill-tag">
+                        <div class="text-3xl mb-3">📖</div>
+                        <h4 class="font-bold mb-1 text-sm">Pembaca Al-Quran</h4>
+                        <p class="text-xs text-gray-500">Fasih dalam membaca Al-Quran (Tartil/Tajwid).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pendidikan & Organisasi -->
+            <section id="pendidikan">
+                <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                    <span class="w-8 h-1 bg-indigo-700 inline-block"></span> Riwayat Pendidikan & Organisasi
+                </h3>
+                
+                <div class="relative border-l-2 border-indigo-100 ml-4 space-y-12">
+                    <!-- SMA -->
+                    <div class="relative pl-8">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-indigo-600 border-4 border-white"></div>
+                        <span class="text-xs font-bold text-indigo-600 uppercase">2023 - 2026 (Sedang Berjalan)</span>
+                        <h4 class="text-xl font-bold mt-1">SMA (Sekolah Menengah Atas)</h4>
+                        <p class="text-gray-600 mt-2">Aktif dalam studi dan pengembangan diri di tingkat sekolah menengah atas.</p>
+                    </div>
+
+                    <!-- SMP -->
+                    <div class="relative pl-8">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-indigo-400 border-4 border-white"></div>
+                        <span class="text-xs font-bold text-indigo-500 uppercase">Lulus 2023</span>
+                        <h4 class="text-xl font-bold mt-1">SMP (Sekolah Menengah Pertama)</h4>
+                        <div class="mt-4 space-y-3">
+                            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-3">
+                                <div class="bg-indigo-100 p-2 rounded-lg text-indigo-600"><i class="fas fa-users"></i></div>
+                                <div>
+                                    <p class="font-bold text-sm">Ketua IPM (Ikatan Pelajar Muhammadiyah)</p>
+                                    <p class="text-xs text-gray-500">Memimpin organisasi siswa dan mengkoordinasi berbagai kegiatan sekolah.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-start gap-3">
+                                <div class="bg-indigo-100 p-2 rounded-lg text-indigo-600"><i class="fas fa-music"></i></div>
+                                <div>
+                                    <p class="font-bold text-sm">Anggota Ekstrakurikuler Drum Band</p>
+                                    <p class="text-xs text-gray-500">Berpartisipasi aktif dalam latihan dan pertunjukan musik sekolah.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SD -->
+                    <div class="relative pl-8">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-indigo-200 border-4 border-white"></div>
+                        <span class="text-xs font-bold text-indigo-300 uppercase">Lulus 2014</span>
+                        <h4 class="text-xl font-bold mt-1">SD (Sekolah Dasar)</h4>
+                        <p class="text-gray-600 mt-2">Menyelesaikan pendidikan dasar dengan fondasi karakter yang kuat.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="bg-indigo-900 text-white py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Mari Berkolaborasi!</h2>
+            <p class="text-indigo-200 mb-12">Siap membantu sebagai porter, koki, atau bekerjasama dalam organisasi.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/10 p-8 rounded-3xl backdrop-blur-md">
+                    <div class="text-3xl mb-4 text-indigo-300"><i class="fas fa-phone"></i></div>
+                    <p class="text-sm text-indigo-200 mb-1">Telepon / WhatsApp</p>
+                    <p class="text-xl font-bold">083110715645</p>
+                </div>
+                <div class="bg-white/10 p-8 rounded-3xl backdrop-blur-md">
+                    <div class="text-3xl mb-4 text-indigo-300"><i class="fab fa-instagram"></i></div>
+                    <p class="text-sm text-indigo-200 mb-1">Instagram</p>
+                    <p class="text-xl font-bold">@hamzh_sungkar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-gray-400 text-sm">
+        <p>&copy; 2024 Muhamad Hamjah. Dibuat dengan semangat petualang.</p>
+    </footer>
+
+</body>
+</html>
